@@ -1,0 +1,346 @@
+/* Globaal */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Swanky+and+Moo+Moo&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  font-weight: 200;
+}
+
+iframe {
+  height: 35vh;
+  width: 80vw;
+}
+
+/* Navigatie */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 1.1em;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+nav img {
+  height: 4vw;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.1em;
+  list-style: none;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  transition: all ease-in 300ms;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-image: url("images/bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+header h1 {
+  font-size: 4rem;
+  justify-content: center;
+}
+
+header p {
+  font-family: "Swanky and Moo Moo", cursive;
+  font-size: 2rem;
+}
+
+header section span {
+  color: #ffffff;
+}
+
+header nav img {
+  position: static;
+  transform: none;
+  animation: none;
+}
+
+#index header section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 7vw;
+}
+
+#overons header section {
+  display: flex;
+  gap: 3vw;
+  justify-content: space-between;
+  padding: 0 7vw 0 7vw;
+}
+
+#overons header img {
+  position: relative;
+  transform: translateY(80px);
+  transform: translateX(100%);
+  animation: SlideIn 0.5s ease-out forwards;
+}
+
+@keyframes SlideIn {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#overzicht header section {
+  display: flex;
+  gap: 3vw;
+  padding: 0 7vw 0 7vw;
+  justify-content: space-between;
+}
+
+#overzicht header img {
+  margin-right: 7vw;
+  max-width: 22em;
+}
+
+/* main */
+main {
+  padding: 7vw;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  padding-bottom: 10vw;
+  padding-top: 5vw;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  line-height: 2em;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h3 {
+  color: white;
+}
+
+/* sections en articles */
+section {
+  display: flex;
+  align-items: center;
+}
+
+section img {
+  max-width: 100vh;
+}
+
+section h2 {
+  line-height: 4rem;
+}
+
+section p {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+section a {
+  color: white;
+  background-color: #000;
+  padding: 0.8em;
+  margin: 0.8em;
+  border-radius: 0 10px 0 10px;
+  transition: all ease-in 200ms;
+  text-decoration: none;
+}
+
+section a:hover {
+  padding: 1em;
+  margin: 1em;
+}
+
+section ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+article a {
+  color: white;
+  background-color: #000;
+  padding: 0.8em;
+  margin: 0.8em;
+  border-radius: 0 10px 0 10px;
+  transition: all ease-in 200ms;
+  text-decoration: none;
+}
+
+article a:hover {
+  padding: 1em;
+  margin: 1em;
+}
+
+/* Specificaties */
+
+/* Home */
+.afleveringen div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.afleveringen article {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  width: calc(50% - 1rem);
+  box-sizing: border-box;
+  border-left: 10px solid transparent;
+  border-color: #5b3393;
+}
+
+
+.afleveringen article div {
+  flex-direction: column;
+}
+
+.afleveringen h3 {
+  font-weight: 300;
+}
+
+.afleveringen p {
+  color: #555;
+}
+
+.afleveringen span {
+  font-size: 0.8rem;
+  color: #b269b9;
+  font-weight: 500;
+}
+
+#index>main>section:nth-of-type(1) {
+  gap: 15vw;
+}
+
+#index>main>section:nth-of-type(2) {
+  gap: 10vw;
+}
+
+#index>main>section:nth-of-type(3) {
+  display: block;
+  text-align: left;
+}
+
+#index>main>section:nth-of-type(3) h2 {
+  margin-bottom: 2rem;
+}
+
+/* over ons */
+#overons>main>section:nth-of-type(1) {
+  gap: 40vw;
+}
+
+.overons-fotos {
+  position: relative;
+  width: 25vw;
+  height: 20vh;
+  margin: 5rem auto;
+}
+
+#overons>main>section:nth-of-type(2) {
+  background-image: url(images/bg.png);
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 5px;
+  justify-content: center;
+  gap: 10vw;
+  margin-top: 2rem;
+}
+
+#overons>main>section:nth-of-type(3) {
+  gap: 10vw;
+  margin-top: 2rem;
+}
+
+#overons>main>section:nth-of-type(4) {
+  display: block;
+  text-align: left;
+}
+
+
+.lily {
+  top: -8vh;
+  left: 0.8vw;
+  z-index: 1;
+  position: absolute;
+}
+
+.soof {
+  top: -3vh;
+  left: 17vw;
+  z-index: 2;
+  position: absolute;
+}
+
+.tekstballon h2 {
+  position: relative;
+  top: 5.9em;
+  left: 3.8em;
+}
+
+.teamleden {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+/* overzicht */
+#overzicht main article {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  margin: 7vw;
+}
+
+#overzicht main article img {
+  box-shadow: 0px 2px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+#overzicht main article p {
+  line-height: 2em;
+  padding-bottom: 2em;
+}
+
+#overzicht span {
+  font-size: 0.8rem;
+  color: #b269b9;
+  font-weight: 500;
+}
